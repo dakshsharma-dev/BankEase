@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: bankease
+      MYSQL_USER: bankease
+      MYSQL_PASSWORD: bankease
+      MYSQL_ROOT_PASSWORD: root
+    ports: ["3306:3306"]
+    volumes: [bankease_mysql:/var/lib/mysql]
+volumes:
+  bankease_mysql:

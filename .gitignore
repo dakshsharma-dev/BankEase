@@ -1,0 +1,29 @@
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Java / Maven
+backend/target/
+*.class
+*.jar
+*.log
+
+# TypeScript generated files
+*.tsbuildinfo
+
+# Generated Vite config files
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
