@@ -25,7 +25,7 @@ public class BankService {
     public BankService(PasswordEncoder encoder) { this.encoder=encoder; seed(); }
     private String id(String p) { return p + "-" + sequence.incrementAndGet(); }
     private void seed() {
-        addUser("customer","customer123","Aarav Mehta",Role.CUSTOMER,"10000");
+        addUser("daksh","Daksh@BankEase2026!","Daksh Sharma",Role.CUSTOMER,"10000");
         addUser("admin","admin123","BankEase Admin",Role.ADMIN,"25000");
         addUser("support","support123","Support Desk",Role.SUPPORT,"50000");
     }

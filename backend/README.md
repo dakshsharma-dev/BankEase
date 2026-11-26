@@ -12,7 +12,7 @@ mvn spring-boot:run
 SPRING_PROFILES_ACTIVE=mysql mvn spring-boot:run
 ```
 
-Demo credentials: `customer/customer123`, `admin/admin123`, `support/support123`.
+Demo credentials: `daksh/Daksh@BankEase2026!`, `admin/admin123`, `support/support123`.
 Login with `POST /api/auth/login` and retain the `JSESSIONID` cookie for subsequent
 requests. Main endpoints include `/api/dashboard`, `/api/accounts`,
 `/api/transactions`, `/api/transfers`, `/api/bills` and `/api/bills/pay`,
