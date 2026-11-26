@@ -1,15 +1,18 @@
+
 spring:
   application.name: bank-ease
   profiles.active: ${SPRING_PROFILES_ACTIVE:mock}
   jackson.serialization.write-dates-as-timestamps: false
+
 server:
   port: ${PORT:8080}
   servlet:
     session:
       cookie:
         http-only: true
-        same-site: lax
-        secure: ${COOKIE_SECURE:false}
+        same-site: none
+        secure: true
+
 ---
 spring:
   config.activate.on-profile: mysql
@@ -20,6 +23,7 @@ spring:
   jpa:
     hibernate.ddl-auto: update
     open-in-view: false
+
 ---
 spring:
   config.activate.on-profile: mock
