@@ -11,7 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 .allowedOrigins(
                     "http://localhost:5173",
-                    "http://localhost:5174"
+                    "http://localhost:5174",
+                    "https://bank-ease-theta.vercel.app"
                 )
                 .allowedMethods("GET", "POST", "PATCH", "OPTIONS")
                 .allowCredentials(true);
